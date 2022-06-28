@@ -18,6 +18,11 @@ jobs:
         ref: 'v1.3.0'
         path: '.'
 
+    - name: list dir
+      uses: philips-labs/list-folders-action@v1
+      with:
+        path: .
+
     - name: Login to GitHub Container Registry
       uses: docker/login-action@v2
       with:
